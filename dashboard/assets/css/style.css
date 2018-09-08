@@ -1,0 +1,52 @@
+
+/*==============================
+	DASHBOARD
+===============================*/
+body{background: #e5e5e5; font-family: arial;}
+ul{ list-style: none; padding: 0;margin: 0;}
+a{ text-decoration: none; }
+aside{ position: fixed; background: #343a40; top: 0; left: 0; width: 295px; text-align: center;height: 100%;}
+aside .logo{ color: #dedede;height: 60px; border-bottom: 1px solid #333;background: #343a40; box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);  display: flex;align-items: center; justify-content: center;}
+aside .nav_ul{ display: flex; align-items: center; padding: 20px;padding-top: 54px;}
+ul.submenu{ display: none;position: absolute;  top: 0;right: -92px; width: auto !important; background: #f5f5f5;border-radius: 7px; padding: 12px; }
+aside ul li:hover > .submenu{ display: block;background: #435465; }    
+aside .nav_ul ul li a{ color: #fff;width: auto;display: block; padding: 13px 10px;}
+aside .nav_ul ul{ text-align: left; width: 100%; }
+aside .nav_ul ul li a:hover{ background: #4272d726; }
+aside .nav_ul ul li { position: relative; }
+aside .nav_ul li .fas{ padding-right: 17px; color: #866a6a !important; font-size: 20px;}
+/*aside .nav_ul li .icon-add{ color: #09bd4a; }
+aside .nav_ul li .icon-lanc{ color: #7d3204; }
+aside .nav_ul li .icon-check{ color: #7b881d; }
+aside .nav_ul li .icon-eraser{ color: #b50606; }*/
+
+
+header{ position: fixed;right: 0; height: 60px;background: #343a40; left: 295px; top: 0;color: #dedede; border-left: 1px solid #343140; }
+header .user{ float: right;padding-right: 100px; }
+header .user .icon-arrow{ padding-left: 10px; }
+.content { padding-left: 321px; padding-top: 100px; }
+.content table.emails{ border-collapse: collapse; }
+.content table.emails tr{ border-bottom: 1px solid rgba(100,121,143,0.122); }
+.content table.emails tr td{ padding: 10px; font-size: 15px;}
+.content table.emails tr td.name{ padding-right: 60px; }
+.content table.emails tr td.text{ font-size: 15px; padding-right: 56px; }
+.content table.emails tr:hover{ cursor: pointer;box-shadow: 0px 2px 7px 1px #c3c3c3; }
+
+/*==============================
+	Cadastro de Aluno
+==============================*/
+.btn_volt{ background: #4f9eff; color: #fff; border-radius: 17px; padding: 6px 24px;}
+.cad-aluno .content form h2{ border-bottom: 1px solid #ccc;padding-bottom: 10px;width: 100%;}
+.cad-aluno .content form{ width: 90%;}
+.cad-aluno .content form label ,.cad-aluno .content form input{ display: block;}
+.cad-aluno .content form label { margin-bottom:10px; font-weight: bold; font-size: 15px;}
+.cad-aluno .content form input,.cad-aluno .content form select{ height: 35px;margin-bottom:29px; border-radius: 5px;padding-left: 17px; border: 1px solid #a2a2a2; width: 100%;}
+.cad-aluno .content form select{ height: 39px;width: 38%;padding-left: 7px; }
+.cad-aluno .content form input.input_large{ width: 97%; }
+.cad-aluno .content form input.input_small{ width: 20%;}
+.cad-aluno .content form .div_inline{ display: inline-block; margin-right: 25px; width: 30%;}
+.cad-aluno .content form .div_inline_md{ display: inline-block; width: 40%; }
+.cad-aluno .content form .div_inline_sm{ display: inline-block; width: 20%;}
+.last{ margin-right: 0 !important;}
+.cad-aluno .content form button.btnCad{ background: #0bbd29; cursor: pointer; transition: .5s; font-size: 20px; border-radius:5px; width: 30%; margin: 0 auto; border: none; height: 46px; color: #fff;font-weight: bold;}
+.cad-aluno .content form button.btnCad:hover{ box-shadow:0 0 10px 2px #16ef3b78;}
