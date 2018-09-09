@@ -38,9 +38,9 @@ header .user .menu_user{ display: none; background: #fff; position: absolute; bo
 header .user:hover > .menu_user{ display: block; }
 header .user .menu_user ul li a{ display: block; padding: 10px 29px; color: #ababab;}
 header .user .menu_user:before{ content:'';width: 0;height: 0;    border-left: 13px solid transparent; border-right: 13px solid transparent; border-bottom: 15px solid #fff; top: -11px; position: absolute; left: 0; right: 0; margin: 0 auto; }
-header .user .menu_user ul{ padding-top: 10px; text-align: center;}
+header .user .menu_user ul{ padding-top: 10px; }
 header .user .menu_user ul li:last-child{ border-top: 1px solid #ece9e9; }
-
+header .user .menu_user ul li i{ margin-right: 10px; }
 
 .content { padding-left: 321px; padding-top: 100px; }
 .content table.emails{ border-collapse: collapse; }
@@ -101,3 +101,4 @@ header .user .menu_user ul li:last-child{ border-top: 1px solid #ece9e9; }
 .list .content table tr td .icon-trash{ color: #fff; background: #ff0000; padding: 5px 9px; border-radius: 5px; margin-right: 10px;font-size: 17px;}
 .list .content table tr td .icon-edit{ color: #fff; background: #fbc852; padding: 5px 9px; border-radius: 5px; font-size: 17px;}
 .list .content h2{ margin-bottom: 29px; }
+.list .content table tr td.ra{ font-weight: bold; font-style: italic; }
