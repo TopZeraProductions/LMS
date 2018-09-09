@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="assets/js/style.js"></script>
+</head>
+<body class="list_aluno cad">
+<aside>
+	<div class="logo">
+		<h2><span>TOPZERA</span><span class="logo_mini">T</span></h2>
+	</div>
+	<div class="nav_ul">
+		<ul>
+			<li><a href="dashboard.html"><i class="fas fa-home"></i><span>Inicio</span></a></li>
+			<li><a href="#"><i class="fas fa-plus icon-add"></i><span>Cadastrar</span></a>
+				<ul class="submenu">
+					<li><a href="cad-aluno.html">Alunos</a></li>
+					<li><a href="cad-professor.html">Professores</a></li>
+				</ul>
+			
+			</li>
+			<li><a href="#"><i class="fas fa-list-ul"></i><span>Listar</span></a>
+				<ul class="submenu">
+					<li><a href="list_aluno.html">Alunos</a></li>
+					<li><a href="list_professor.html">Professores</a></li>
+				</ul>
+			</li>
+			<!-- <li><a href="#"><i class="fas fa-plus icon-add"></i>Matricula / Inscrição</a></li>
+			<li><a href="#"><i class="fas fa-clipboard-list icon-lanc"></i>Lançamento de Notas</a></li>
+			<li><a href="#"><i class="fas fa-clipboard-check icon-check"></i>Fechamento de Notas</a></li>
+			<li><a href="#"><i class="fas fa-eraser icon-eraser"></i>Corrigir Atividades</a></li> -->
+		</ul>
+	</div>
+</aside>
+
+<header>
+	<div class="user">
+		<h4>Ramon C. <i class="fas fa-angle-down icon-arrow"></i></h4>
+	</div>
+</header>
+
+<div class="content">
+	<h2>Lista de Alunos</h2>
+	<hr>
+	<form method="post" >
+		<div class="content_form">
+			<div class="div_inline">
+				<label>Selecione o curso do aluno:</label>
+				<select id="select_semestre">
+					<option>Selecione</option>
+					<option value="si">Sistema de Informação</option>
+					<option value="ads">Análise e desenvolvimento de software</option>
+					<option value="jd">Jogos Digitais</option>
+					<option value="rd">Redes</option>				
+				</select>
+			</div>
+
+			<div class="div_inline div_sem">
+				<label>Selecione o semestre do aluno:</label>
+				<select>
+					<option>Selecione</option>
+					<option value="sem1">1º Semestre</option>
+					<option value="sem2">2º Semestre</option>
+					<option value="sem3">3º Semestre</option>
+					<option value="sem4">4º Semestre</option>
+					<option value="sem5">5º Semestre</option>
+					<option value="sem6">6º Semestre</option>
+					<option value="sem7">7º Semestre</option>
+					<option value="sem8">8º Semestre</option>
+				</select>
+			</div>
+			
+			<div class="div_inline div_sem">
+				<label>Selecione a turma do aluno:</label>
+				<select>
+					<option>Selecione</option>
+					<option value="turmaa">Turma A</option>
+					<option value="turmab">Turma B</option>
+					<option value="turmac">Turma C</option>
+					<option value="turmad">Turma D</option>
+					<option value="turmae">Turma E</option>
+					<option value="turmaf">Turma F</option>
+					<option value="turmag">Turma G</option>
+					<option value="turmah">Turma H</option>
+				</select>
+			</div>
+		</div>
+
+		<button type="submit"><i class="fas fa-search"></i>Buscar</button>
+
+	</form>
+</div>
+
+</body>
+</html>
