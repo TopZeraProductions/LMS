@@ -32,8 +32,16 @@ aside.active .nav_ul ul li a{ padding: 13px 24px; }
 
 
 header{ position: fixed;right: 0; height: 60px;background: #384452; width: 100%; top: 0;color: #dedede; border-left: 1px solid #343140; }
-header .user{ float: right;padding-right: 100px; }
+header .user{ float: right;padding-right: 100px; cursor: pointer;}
 header .user .icon-arrow{ padding-left: 10px; }
+header .user .menu_user{ display: none; background: #fff; position: absolute; border-radius: 7px;}
+header .user:hover > .menu_user{ display: block; }
+header .user .menu_user ul li a{ display: block; padding: 10px 29px; color: #ababab;}
+header .user .menu_user:before{ content:'';width: 0;height: 0;    border-left: 13px solid transparent; border-right: 13px solid transparent; border-bottom: 15px solid #fff; top: -11px; position: absolute; left: 0; right: 0; margin: 0 auto; }
+header .user .menu_user ul{ padding-top: 10px; text-align: center;}
+header .user .menu_user ul li:last-child{ border-top: 1px solid #ece9e9; }
+
+
 .content { padding-left: 321px; padding-top: 100px; }
 .content table.emails{ border-collapse: collapse; }
 .content table.emails tr{ border-bottom: 1px solid rgba(100,121,143,0.122); }
@@ -83,13 +91,13 @@ header .user .icon-arrow{ padding-left: 10px; }
 /*==============================
 	Listagem de Professor
 ==============================*/
-.list_professor .content table{ width: 100%; border-collapse: separate; border-spacing: 0;background: #3844521c;}
-.list_professor .content table thead{ background: #384452; color: #fff; font-weight: bold; }
-.list_professor .content table thead tr:first-child td:first-child{ border-top-left-radius: 10px; }
-.list_professor .content table thead tr:last-child td:last-child{ border-top-right-radius: 10px; }
-.list_professor .content table tr td{ border-bottom: 1px solid rgba(100,121,143,0.122); }
-.list_professor .content table tr td{ padding: 10px 21px; font-size: 15px;}
-.list_professor .content table tr td .icon-info{ color: #fff; background: #184be0;padding: 5px 12px; border-radius: 5px; font-size: 17px;margin-right: 10px;}
-.list_professor .content table tr td .icon-trash{ color: #fff; background: #ff0000; padding: 5px 9px; border-radius: 5px; margin-right: 10px;font-size: 17px;}
-.list_professor .content table tr td .icon-edit{ color: #fff; background: #fbc852; padding: 5px 9px; border-radius: 5px; font-size: 17px;}
-.list_professor .content h2{ margin-bottom: 29px; }
+.list .content table{ width: 100%; border-collapse: separate; border-spacing: 0;background: #3844521c;}
+.list .content table thead{ background: #384452; color: #fff; font-weight: bold; }
+.list .content table thead tr:first-child td:first-child{ border-top-left-radius: 10px; }
+.list .content table thead tr:last-child td:last-child{ border-top-right-radius: 10px; }
+.list .content table tr td{ border-bottom: 1px solid rgba(100,121,143,0.122); }
+.list .content table tr td{ padding: 10px 21px; font-size: 15px;}
+.list .content table tr td .icon-info{ color: #fff; background: #184be0;padding: 5px 12px; border-radius: 5px; font-size: 17px;margin-right: 10px;}
+.list .content table tr td .icon-trash{ color: #fff; background: #ff0000; padding: 5px 9px; border-radius: 5px; margin-right: 10px;font-size: 17px;}
+.list .content table tr td .icon-edit{ color: #fff; background: #fbc852; padding: 5px 9px; border-radius: 5px; font-size: 17px;}
+.list .content h2{ margin-bottom: 29px; }

@@ -43,13 +43,19 @@
 <header>
 	<div class="user">
 		<h4>Ramon C. <i class="fas fa-angle-down icon-arrow"></i></h4>
+		<div class="menu_user">
+			<ul>
+				<li><a href="#">Opções</a></li>
+				<li><a href="#">Sair</a></li>
+			</ul>
+		</div>
 	</div>
 </header>
 
 <div class="content">
 	<h2>Lista de Alunos</h2>
 	<hr>
-	<form method="post" >
+	<form method="post" action="turma.html" >
 		<div class="content_form">
 			<div class="div_inline">
 				<label>Selecione o curso do aluno:</label>
@@ -59,6 +65,15 @@
 					<option value="ads">Análise e desenvolvimento de software</option>
 					<option value="jd">Jogos Digitais</option>
 					<option value="rd">Redes</option>				
+				</select>
+			</div>
+
+			<div class="div_inline div_sem">
+				<label>Selecione o período em que o aluno estuda:</label>
+				<select>
+					<option>Selecione</option>
+					<option value="turmaa">Diurno</option>
+					<option value="turmab">Noturno</option>
 				</select>
 			</div>
 
@@ -91,6 +106,7 @@
 					<option value="turmah">Turma H</option>
 				</select>
 			</div>
+
 		</div>
 
 		<button type="submit"><i class="fas fa-search"></i>Buscar</button>
