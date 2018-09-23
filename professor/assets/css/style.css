@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700');
+
+ul{ list-style: none; margin: 0; padding: 0;}
+body{ padding: 0; margin: 0; font-family: 'Poppins', sans-serif;}
+/*==============================================
+	HEADER
+================================================*/
+header{ background: #384452; }
+header nav div.ul_left ul li { border-right: 2px solid #19232f; background: #2f3842;float: left;height: 52px; width: 139px; border-top: 6px solid transparent; font-weight: 600;}
+header nav div.ul_left ul li a{ text-decoration: none; color: #fff; display: flex; height: 100%; align-items: center; justify-content: center; }
+header nav div.ul_left ul li.active{ background: #fff; border-top-color: #688ab1;border-right: none; }
+header nav div.ul_left ul li.active a{ color: #688ab1; }
+header nav .clear{ clear: both; }
+header nav div.ul_left ul li:last-child{ border-right: none; }
+header nav div.ul_right,header nav div.ul_left{ display: inline-block; width: 49%;vertical-align: middle;}
+header nav div.ul_right{ text-align: right; }
+header nav div.ul_right h4{ margin: 0; color: #fff; }
+header nav div.ul_right .right{width: 120px; text-align: left; float: right; cursor: pointer;}
+header nav div.ul_left{padding-top: 10px;}
+header nav div.ul_right .menu_user{ display: none; position: absolute; background: #fff; right: 22px; width: 184px;border-radius: 7px;}
+header nav div.ul_right .menu_user ul a{ text-decoration: none;display: block; text-align: left; padding: 11px 24px; color: #2f3842;}
+header nav div.ul_right .menu_user ul{ text-align: left; border: 1px solid #ddd; border-radius: 7px; }
+header nav div.ul_right .menu_user ul a i{ margin-right: 10px; }
+header nav div.ul_right .menu_user ul li:hover{ background: #efefeffc; }
+header nav div.ul_right .menu_user ul li{ border-radius: 2px; }
+header nav div.ul_right .right:hover .menu_user{ display: block; }
+
+
+
