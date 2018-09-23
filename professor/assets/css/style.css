@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700');
 
 ul{ list-style: none; margin: 0; padding: 0;}
-body{ padding: 0; margin: 0; font-family: 'Poppins', sans-serif;}
+body{ padding: 0; margin: 0; font-family: 'Poppins', sans-serif;user-select: none;}
 /*==============================================
 	HEADER
 ================================================*/
@@ -25,5 +25,16 @@ header nav div.ul_right .menu_user ul li:hover{ background: #efefeffc; }
 header nav div.ul_right .menu_user ul li{ border-radius: 2px; }
 header nav div.ul_right .right:hover .menu_user{ display: block; }
 
-
-
+.content{ padding: 50px 0; width: 1220px; margin: 0 auto; }
+.content h1{ margin: 0; }
+.content hr{ margin-bottom: 30px; }
+.content .card{ margin-right: 40px; width: 30%; display: inline-block; text-align: center;border-radius: 13px;background: #efefef69;position: relative;min-height: 320px; vertical-align: top;}
+.content .row .card:last-child{ margin: 0; }
+.content .card .card-header{ background: #7abdf4; border-top-left-radius: 13px;border-top-right-radius: 13px;padding: 10px 0;}
+.content .card .card-header i{ height: auto; font-size: 32px; border: 4px solid;width: auto;border-radius: 50px; padding: 10px 12px; color: #2f3842; }
+.content .card .card-footer{ border-bottom-left-radius: 13px; border-bottom-right-radius: 13px; border-top: 1px solid #cccccc9c; position: absolute; bottom: 0; width: 100%;}
+.content .card .card-body{ padding: 21px 0;color: #2f3842; }
+.content .card .card-body h3{ margin: 0; margin-bottom: 22px; }
+.content .card .card-footer a{ display: block; text-decoration: none; background: #7abdf4;  width: 30%; color: #f8f8f8; margin: 17px auto; font-weight: bold; border-radius: 5px; }
+.content .card .card-body .block_dados{ text-align: left; width: 45%; margin: 0 auto; }
+.content .card .card-body .block_dados label{ width: 87px; display: inline-block; }
