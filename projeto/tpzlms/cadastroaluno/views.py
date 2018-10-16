@@ -4,7 +4,7 @@ from cadastroaluno.models import Inscricao
 from cadastroaluno.forms import InscricaoForm
 
 def home(request):
-    return render(request,'index.html')
+    return render(request, 'index.html')
 
 class Criar(CreateView):
     template_name = 'cadastro.html'

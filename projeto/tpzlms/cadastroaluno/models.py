@@ -1,8 +1,9 @@
 from django.db import models
 
 class Inscricao(models.Model):
-    nome = models.CharField(max_length=100)
-    cpf = models.CharField('CPF', max_length=11, unique=True)
+
+    nome  = models.CharField(max_length=100)
+    cpf   = models.CharField('CPF', max_length=11, unique=True)
     idade = models.IntegerField()
     email = models.EmailField(unique=True)
     telefone = models.CharField(max_length=20, blank=True)
