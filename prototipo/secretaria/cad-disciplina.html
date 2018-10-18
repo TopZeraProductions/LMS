@@ -12,7 +12,7 @@
   <script type="text/javascript" src="assets/js/style.js"></script>
 
 </head>
-<body class="cad-aluno cad">
+<body class="cad-disciplina cad">
 <aside>
 	<div class="logo">
 		<h2><span>TOPZERA</span><span class="logo_mini">T</span></h2>
@@ -58,15 +58,66 @@
 <div class="content">	
 	<a href="dashboard.html" class="btn_volt">Voltar</a>
 	<form method="post">	
-		<h2>Cadastro de Aluno</h2>
+		<h2>Cadastro de Disciplina</h2>
 		<label for="txtNome">Nome:</label>
-		<input type="text" id="txtNome" class="input_large" placeholder="Digite o nome completo do aluno">
+		<input type="text" id="txtNome" class="input_large" placeholder="Digite o nome da disciplina">
 		<div class="div_inline">
-			<label for="txtCPF">CPF:</label>
-			<input type="text" id="txtCPF" class="" placeholder="___ . ___ . ___ - __" maxlength="11">
+			<label for="txtCarga">Carga Horária:</label>
+			<input type="text" id="txtCarga" class="" placeholder="Carga horária">
+		</div>
+
+		<div class="div_inline">
+			<label>Curso:</label>
+			<select id="select_curso">
+				<option>Selecione</option>
+				<option value="si">Sistema de Informação</option>
+				<option value="ads">Análise e desenvolvimento de software</option>
+				<option value="jd">Jogos Digitais</option>
+				<option value="rd">Redes</option>				
+			</select>
+		</div>
+
+		<br>
+
+		<label>Semestre:</label>
+		<div class="checkbox_div">
+			<div class="checkboxs">
+				<input type="checkbox" name="1sem" id="check1sem">
+				<label for="check1sem">1º semestre</label>	
+			</div>	
+			<div class="checkboxs">
+				<input type="checkbox" name="2sem" id="check2sem">
+				<label for="check2sem">2º semestre</label>	
+			</div>
+			<div class="checkboxs">
+				<input type="checkbox" name="3sem" id="check3sem">
+				<label for="check3sem">3º semestre</label>	
+			</div>
+			<div class="checkboxs">
+				<input type="checkbox" name="4sem" id="check4sem">
+				<label for="check4sem">4º semestre</label>	
+			</div>
+			<div class="checkboxs">
+				<input type="checkbox" name="5sem" id="check5sem">
+				<label for="check5sem">5º semestre</label>	
+			</div>
+			<div class="checkboxs">
+				<input type="checkbox" name="6sem" id="check6sem">
+				<label for="check6sem">6º semestre</label>	
+			</div>
+			<div class="checkboxs">
+				<input type="checkbox" name="7sem" id="check7sem">
+				<label for="check7sem">7º semestre</label>	
+			</div>
+			<div class="checkboxs">
+				<input type="checkbox" name="8sem" id="check8sem">
+				<label for="check8sem">8º semestre</label>	
+			</div>
+
 		</div>
 		
-		<div class="div_inline">
+
+		<!-- <div class="div_inline">
 			<label for="txtRG">RG:</label>
 			<input type="text" id="txtRG" class="" placeholder="__ . ___ . ___ . __" maxlength="10">
 		</div>
@@ -84,41 +135,9 @@
 		<div class="div_inline">
 			<label for="txtCidade">Cidade:</label>
 			<input type="text" id="txtCidade" placeholder="Digite a cidade">
-		</div>
+		</div> -->
 		
-		<div class="div_inline last">
-			<label for="txtUF">UF:</label>
-			<select>
-				<option value="">Selecione</option>
-				<option value="AC">Acre</option>
-				<option value="AL">Alagoas</option>
-				<option value="AP">Amapá</option>
-				<option value="AM">Amazonas</option>
-				<option value="BA">Bahia</option>
-				<option value="CE">Ceará</option>
-				<option value="DF">Distrito Federal</option>
-				<option value="ES">Espirito Santo</option>
-				<option value="GO">Goiás</option>
-				<option value="MA">Maranhão</option>
-				<option value="MS">Mato Grosso do Sul</option>
-				<option value="MT">Mato Grosso</option>
-				<option value="MG">Minas Gerais</option>
-				<option value="PA">Pará</option>
-				<option value="PB">Paraíba</option>
-				<option value="PR">Paraná</option>
-				<option value="PE">Pernambuco</option>
-				<option value="PI">Piauí</option>
-				<option value="RJ">Rio de Janeiro</option>
-				<option value="RN">Rio Grande do Norte</option>
-				<option value="RS">Rio Grande do Sul</option>
-				<option value="RO">Rondônia</option>
-				<option value="RR">Roraima</option>
-				<option value="SC">Santa Catarina</option>
-				<option value="SP">São Paulo</option>
-				<option value="SE">Sergipe</option>
-				<option value="TO">Tocantins</option>
-			</select>		
-		</div>
+	
 		
 		<button type="submit" class="btnCad">Cadastrar</button>
 		

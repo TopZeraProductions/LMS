@@ -103,3 +103,11 @@ header .user .menu_user ul li i{ margin-right: 10px; }
 .list .content table tr td .icon-edit{ color: #fff; background: #fbc852; padding: 5px 9px; border-radius: 5px; font-size: 17px;}
 .list .content h2{ margin-bottom: 29px; }
 .list .content table tr td.ra{ font-weight: bold; font-style: italic; }
+
+/*==============================
+	Cadastro de disciplina
+==============================*/
+.cad-disciplina .checkbox_div{ background: #777a7d3d; border-radius: 10px; padding: 10px 0 0;margin-bottom: 20px; }
+.cad-disciplina .checkbox_div .checkboxs{ display: inline-block; width: 18%; text-align: center;margin-bottom: 13px;}
+.cad-disciplina .checkbox_div input{width: auto !important; height: auto !important ; margin: 0 !important;display: inline-block !important;}
+.cad-disciplina .checkbox_div .checkboxs label{ display: inline-block; padding-left: 10px; margin: 0;}
