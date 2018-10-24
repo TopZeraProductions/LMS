@@ -1,11 +1,78 @@
 {% extends 'base.html' %}
 
 {% block content %}
-        <form action="" method="POST">
-                {% csrf_token %}
-                {{ form.as_p }}
+<div class="content">
+    <a href="{ % url 'cadastro' % }" class="btn_volt">Voltar</a>
 
-                <button type="submit">Criar</button>
-        </form>
-        
+    <h2>Cadastro de Aluno</h2>
+
+    <form action="/cadastro/" method="post">
+        <input type="hidden" name="csrfmiddlewaretoken" value="cXZbbxLehyr7Hvehy0DWpwsliaLQqyL3yw0VX2vcUekLDGlXIhfOO8NtnRhgohq7">
+
+        <label for="txtNome">Nome:</label>
+
+        <input type="text" id="txtNome" name="nome" class="input_large" placeholder="Digite o nome completo do aluno">
+        <div class="div_inline">
+            <label for="txtCPF">CPF:</label>
+            <input type="text" id="txtCPF" class="" placeholder="___ . ___ . ___ - __" maxlength="11">
+        </div>
+
+        <div class="div_inline">
+            <label for="txtRG">RG:</label>
+            <input type="text" id="txtRG" name="rg" class="" placeholder="__ . ___ . ___ . __" maxlength="10">
+        </div>
+
+        <div class="div_inline last">
+            <label for="txtCEP">CEP:</label>
+            <input type="text" id="txtCEP" name="cep" class="" placeholder="_____ - ___" maxlength="8">
+        </div>
+
+        <div class="div_inline">
+            <label for="txtEndereco">Endereço:</label>
+            <input type="text" id="txtEndereco" name="endereco" placeholder="Digite o endereço">
+        </div>
+
+        <div class="div_inline">
+            <label for="txtCidade">Cidade:</label>
+            <input type="text" id="txtCidade" name="cidade" placeholder="Digite a cidade">
+        </div>
+
+        <div class="div_inline last">
+            <label for="txtUF">UF:</label>
+            <select name="uf" id="txtUF">
+                <option value="">Selecione</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espirito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+
+        <button type="submit" class="btnCad">Cadastrar</button>
+
+    </form>
+</div>
 {% endblock content %}
