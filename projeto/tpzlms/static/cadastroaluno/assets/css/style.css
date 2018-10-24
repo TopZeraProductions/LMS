@@ -55,20 +55,20 @@ header .user .menu_user ul li i{ margin-right: 10px; }
 	Cadastro de Aluno
 ==============================*/
 .btn_volt{ background: #4f9eff; color: #fff; border-radius: 17px; padding: 6px 24px;}
-.cad .content form h2{ border-bottom: 1px solid #ccc;padding-bottom: 10px;width: 100%;}
-.cad .content form{ width: 90%;}
-.cad .content form label ,.cad .content form input{ display: block;}
-.cad .content form label { margin-bottom:10px; font-weight: bold; font-size: 15px;}
-.cad .content form input,.cad .content form select{ height: 35px;margin-bottom:29px; border-radius: 5px;padding-left: 17px; border: 1px solid #a2a2a2; width: 100%;}
-.cad .content form select{ height: 39px;width: 100%;padding-left: 7px; }
-.cad .content form input.input_large{ width: 97%; }
-.cad .content form input.input_small{ width: 20%;}
-.cad .content form .div_inline{ display: inline-block; margin-right: 25px; width: 30%;}
-.cad .content form .div_inline_md{ display: inline-block; width: 40%; }
-.cad .content form .div_inline_sm{ display: inline-block; width: 20%;}
+.cad .content .form h2{ border-bottom: 1px solid #ccc;padding-bottom: 10px;width: 100%;}
+.cad .content .form{ width: 90%;}
+.cad .content .form label ,.cad .content form input{ display: block;}
+.cad .content .form label { margin-bottom:10px; font-weight: bold; font-size: 15px;}
+.cad .content .form input,.cad .content form select{ height: 35px;margin-bottom:29px; border-radius: 5px;padding-left: 17px; border: 1px solid #a2a2a2; width: 100%;}
+.cad .content .form select{ height: 39px;width: 100%;padding-left: 7px; }
+.cad .content .form input.input_large{ width: 97%; }
+.cad .content .form input.input_small{ width: 20%;}
+.cad .content .form .div_inline{ display: inline-block; margin-right: 25px; width: 30%;}
+.cad .content .form .div_inline_md{ display: inline-block; width: 40%; }
+.cad .content .form .div_inline_sm{ display: inline-block; width: 20%;}
 .last{ margin-right: 0 !important;}
-.cad .content form button.btnCad{ background: #0bbd29; cursor: pointer; transition: .5s; font-size: 20px; border-radius:5px; width: 30%; margin: 0 auto; border: none; height: 46px; color: #fff;font-weight: bold;}
-.cad .content form button.btnCad:hover{ box-shadow:0 0 10px 2px #16ef3b78;}
+.cad .content .form button.btnCad{ background: #0bbd29; cursor: pointer; transition: .5s; font-size: 20px; border-radius:5px; width: 30%; margin: 0 auto; border: none; height: 46px; color: #fff;font-weight: bold;}
+.cad .content .form button.btnCad:hover{ box-shadow:0 0 10px 2px #16ef3b78;}
 .cad hr{ margin-top: 0; margin-bottom: 20px; }
 
 /*==============================
