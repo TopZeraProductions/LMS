@@ -42,7 +42,9 @@ header nav div.ul_right .right:hover .menu_user{ display: block; }
 
 /*====== SALA ======*/
 .content.classroom ul.action{ text-align: right; }
-.content.classroom h1,.content.classroom ul.action { display: inline-block; width: 48%;}
+.content.classroom h1,.content.classroom ul.action { display: inline-block; }
+.content.classroom h1{ width: 23%; }
+.content.classroom ul.action{ width: 75%; }
 .content.classroom ul.action li{ display: inline-block; margin-right: 10px; }
 .content.classroom ul.action a{ padding: 10px 20px; transition: .4s; border-radius: 10px;color: #fff; text-decoration: none; font-weight: bold;}
 .content.classroom ul.action a.faltas{ background: #dc2a63; }
@@ -51,12 +53,19 @@ header nav div.ul_right .right:hover .menu_user{ display: block; }
 .content.classroom ul.action a.conteudo:hover{ box-shadow:0 0 6px 0px #a82adc; }
 .content.classroom ul.action a.voltar{ background: #dcce2a; }
 .content.classroom ul.action a.voltar:hover{ box-shadow:0 0 6px 0px #dcce2a; }
+.content.classroom ul.action a.todas-faltas{ background:#688ab1; }
+.content.classroom ul.action a.todas-faltas:hover{ box-shadow:0 0 6px 0px#688ab1; }
+
+.content.classroom ul.action a.conteudo-lancados{ background:#b16868; }
+.content.classroom ul.action a.conteudo-lancados:hover{ box-shadow:0 0 6px 0px#b16868; }
+
 .content.classroom table{ border-collapse: collapse; width: 100%;}
 .content.classroom table thead{ background: #384452; font-weight: bold;color: #fff; }
+.content.classroom table thead tr td{ background: #384452; }
 .content.classroom table tbody{ border-radius: 5px; }
 .content.classroom table tbody tr{ background: #2f384236; border-bottom: 1px solid #bfbdbd; border-radius: 5px; }
 .content.classroom table tbody tr:last-child{ border: none; }
-.content.classroom table td{ padding: 10px; }
+.content.classroom table td{ padding: 10px; background: #d3d5d7; }
 .content.classroom table tbody tr:last-child td:first-child{ border-bottom-left-radius: 7px; }
 .content.classroom table tbody tr:last-child td:last-child{ border-bottom-right-radius: 7px; }
 .content.classroom table thead tr td:last-child{ border-top-right-radius: 7px; text-align: center;}
@@ -65,3 +74,10 @@ header nav div.ul_right .right:hover .menu_user{ display: block; }
 .content.classroom table tbody tr td:last-child{ text-align: center; }
 .content.classroom form button.enviar{ border: none; cursor: pointer;  background: #22d672; outline: none;transition: .3s; font-size: 17px; color: #fff; text-transform: uppercase; font-weight: bold; padding: 10px 32px; border-radius: 8px; margin-top: 20px; }
 .content.classroom form button.enviar:hover{ box-shadow: 0 0 10px 1px #22d67275;  }
+
+.content.classroom.todas-faltas-sala table tbody tr td:last-child{ opacity: .5; }
+.content.classroom.todas-faltas table tbody tr td:last-child,.content.classroom.todas-faltas table thead tr td:last-child{ text-align: left; }
+.content.classroom.todas-faltas h1,.content.classroom.todas-faltas ul.action ,
+.content.classroom.todas-faltas-sala h1,.content.classroom.todas-faltas-sala ul.action { width: 48%; }
+.content.classroom.todas-faltas tr{ cursor: pointer; transition: .2s;}
+.content.classroom.todas-faltas tbody tr:hover{ box-shadow: 0 0 6px 0px #384452; transform: scale(1.005);}
