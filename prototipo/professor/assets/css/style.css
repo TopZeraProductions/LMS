@@ -39,3 +39,29 @@ header nav div.ul_right .right:hover .menu_user{ display: block; }
 .content .card .card-body .block_dados{ text-align: left; width: 45%; margin: 0 auto; }
 .content .card .card-body .block_dados label{ width: 87px; display: inline-block; }
 .content .card .card-footer a:hover{ transform: scale(1.1); box-shadow: 0 2px 6px -1px #000; }
+
+/*====== SALA ======*/
+.content.classroom ul.action{ text-align: right; }
+.content.classroom h1,.content.classroom ul.action { display: inline-block; width: 48%;}
+.content.classroom ul.action li{ display: inline-block; margin-right: 10px; }
+.content.classroom ul.action a{ padding: 10px 20px; transition: .4s; border-radius: 10px;color: #fff; text-decoration: none; font-weight: bold;}
+.content.classroom ul.action a.faltas{ background: #dc2a63; }
+.content.classroom ul.action a.faltas:hover{ box-shadow:0 0 6px 0px #dc2a63; }
+.content.classroom ul.action a.conteudo{ background: #a82adc; }
+.content.classroom ul.action a.conteudo:hover{ box-shadow:0 0 6px 0px #a82adc; }
+.content.classroom ul.action a.voltar{ background: #dcce2a; }
+.content.classroom ul.action a.voltar:hover{ box-shadow:0 0 6px 0px #dcce2a; }
+.content.classroom table{ border-collapse: collapse; width: 100%;}
+.content.classroom table thead{ background: #384452; font-weight: bold;color: #fff; }
+.content.classroom table tbody{ border-radius: 5px; }
+.content.classroom table tbody tr{ background: #2f384236; border-bottom: 1px solid #bfbdbd; border-radius: 5px; }
+.content.classroom table tbody tr:last-child{ border: none; }
+.content.classroom table td{ padding: 10px; }
+.content.classroom table tbody tr:last-child td:first-child{ border-bottom-left-radius: 7px; }
+.content.classroom table tbody tr:last-child td:last-child{ border-bottom-right-radius: 7px; }
+.content.classroom table thead tr td:last-child{ border-top-right-radius: 7px; text-align: center;}
+.content.classroom table thead tr td:first-child{ border-top-left-radius: 7px; }
+.content.classroom table tbody tr td label{ margin: 0 20px 0 10px; }
+.content.classroom table tbody tr td:last-child{ text-align: center; }
+.content.classroom form button.enviar{ border: none; cursor: pointer;  background: #22d672; outline: none;transition: .3s; font-size: 17px; color: #fff; text-transform: uppercase; font-weight: bold; padding: 10px 32px; border-radius: 8px; margin-top: 20px; }
+.content.classroom form button.enviar:hover{ box-shadow: 0 0 10px 1px #22d67275;  }

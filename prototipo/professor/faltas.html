@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Início</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/style.js"></script>
+
+</head>
+<body class="dashboard">
+	<header>
+		<nav>
+			<div class="ul_left">
+				<ul class="ul_nav">
+					<li><a href="#">Inicio</a></li>
+					<li class="active"><a href="turmas.html">Turmas</a></li>
+					<li><a href="recados.html">Recados</a></li>
+				<!-- 	<li><a href="#"></a></li>
+					<li><a href="#"></a></li> -->
+				</ul>
+			</div>			
+			<div class="ul_right">
+				<div class="right">
+					<h4>Ramon C. <i class="fas fa-angle-down icon-arrow"></i></h4>	
+					<div class="menu_user">
+						<ul>
+							<li><a href="#"><i class="fas fa-cog"></i>Opções</a></li>
+							<li><a href="#"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
+						</ul>
+					</div>			
+				</div>
+			</div>
+		</nav>
+			<div class="clear"></div>			
+
+	</header>
+
+	<div class="content classroom">
+		<h1>SI - 2D - noturno</h1>
+		<ul class="action">
+			<li><a href="#" class="voltar"><< Voltar</a></li>
+		</ul>
+		<hr>
+		<div class="row">
+			<form method="post" id="form">
+				<table>
+					<thead>
+						<tr>
+							<td>RA</td>
+							<td>Nome</td>
+							<td>Faltas</td>
+						</tr>	
+					</thead>
+					<tbody>
+						<tr>
+							<td>1800260</td>
+							<td>Ramon C. Pires</td>
+							<td><input type="radio" name="1800260" id="1800260"><label for="1800260">Presente</label>
+							<input type="radio" name="1800260" id="1800260ausente"><label for="1800260ausente">Ausente</label></td>
+						</tr>
+						<tr>
+							<td>1800230</td>
+							<td>Ronaldinho Gaúcho</td>
+							<td><input type="radio" name="1800230" id="1800230"><label for="1800230">Presente</label>
+							<input type="radio" name="1800230" id="1800230ausente"><label for="1800230ausente">Ausente</label></td>
+						</tr>
+						<tr>
+							<td>1801423</td>
+							<td>Cazalbé</td>
+							<td><input type="radio" name="1801423" id="1801423"><label for="1801423">Presente</label>
+							<input type="radio" name="1801423" id="1801423ausente"><label for="1801423ausente">Ausente</label></td>							
+						</tr>
+						<tr>
+							<td>1802422</td>
+							<td>Tio Carlos</td>
+							<td><input type="radio" name="1802422" id="1802422"><label for="1802422">Presente</label>
+							<input type="radio" name="1802422" id="1802422ausente"><label for="1802422ausente">Ausente</label></td>
+						</tr>
+						</form>
+					</tbody>
+				</table>
+			</form>	
+			<button class="enviar">Salvar</button>
+		</div>	
+	</div>
+
+
+</body>
+</html>
