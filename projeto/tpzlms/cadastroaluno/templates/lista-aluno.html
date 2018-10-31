@@ -1,0 +1,38 @@
+{% extends 'masterpage.html' %}
+
+{% block content %}
+<div class="content">
+	<h2>Turma 2ºD - noturno</h2>
+
+	<table>
+		<thead>
+			<tr>
+				<td class="ra">ra</td>
+				<td>Nome</td>
+				<td>Cidade</td>
+				<td>uf</td>
+				<td>Cep</td>
+				<td>Endereco</td>
+				<td>rg</td>
+			</tr>
+		</thead>
+        {% for aluno in object_list %}
+        <tr>
+            <td class="ra">{{ aluno.id }}</td>
+            <td class="ra">{{ aluno.nome }}</td>
+            <td class="name"><strong>{{ aluno.cidade }}</strong></td>
+            <td class="name"><strong>{{ aluno.uf }}</strong></td>
+            <td class="email">{{ aluno.cep }}</td>
+            <td class="tel"><strong>{{ aluno.endereco }}</strong></td>
+            <td class="tel"><strong>{{ aluno.rg }}</strong></td>
+
+            <!--
+            <td><i class="fas fa-info icon-info"></i><i class="fas fa-trash-alt icon-trash"></i><i class="fas fa-pencil-alt icon-edit"></i></td>
+            -->
+        </tr>
+        {% empty %}
+                <li>Sem itens na lista.</li>
+        {% endfor %}
+	</table>
+</div>
+{% endblock content %}

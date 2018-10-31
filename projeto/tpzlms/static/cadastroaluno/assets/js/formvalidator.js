@@ -22,12 +22,12 @@ $(document).ready(function(){
         }
 
         $.post(
-            '/cadastro/'
+            '/aluno/cadastro/'
             , data,
             function(response, status){
                 if(status == "success"){
                     alert('Cadastrado com sucesso');
-                    window.location = "/lista/";
+                    window.location = "/aluno/listagem/";
 
                 }else{
                     alert('Alguma coisa deu errado');

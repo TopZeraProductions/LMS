@@ -1,9 +1,8 @@
 from django import forms
 from .import models
 
-class InscricaoForm(forms.ModelForm):
+class AlunoForm(forms.ModelForm):
 
     class Meta:
-        model = models.Inscricao
-        fields = "__all__" 
- 
+        model = models.AlunoDAL
+        fields = "__all__"

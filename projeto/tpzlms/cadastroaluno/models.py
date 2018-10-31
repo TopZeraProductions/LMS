@@ -1,6 +1,6 @@
 from django.db import models
 
-class Inscricao(models.Model):
+class AlunoDAL(models.Model):
 
     nome    = models.CharField(max_length=100)
     cidade  = models.CharField('cidade', max_length=20, null=True)
@@ -16,7 +16,7 @@ class Inscricao(models.Model):
         verbose_name_plural = (u'nomes')
 
     def get_absolute_url(self):
-        return u'/lista/'
+        return u'/aluno/listagem'
 
     def __unicode__(self):
         return self.nome

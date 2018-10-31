@@ -1,0 +1,32 @@
+{% extends 'masterpage.html' %}
+
+{% block content %}
+<div class="content">
+	<h2>Turma 2ºD - noturno</h2>
+
+	<table>
+		<thead>
+			<tr>
+				<td class="ra">ID</td>
+				<td>Nome</td>
+				<td>Curso</td>
+				<td>Carga horaria</td>
+			</tr>
+		</thead>
+        {% for disciplina in object_list %}
+        <tr>
+            <td class="ra">{{ disciplina.id }}</td>
+            <td class="ra">{{ disciplina.nome }}</td>
+            <td class="name"><strong>{{ disciplina.curso }}</strong></td>
+            <td class="name"><strong>{{ disciplina.carga_horaria }}</strong></td>
+
+            <!--
+            <td><i class="fas fa-info icon-info"></i><i class="fas fa-trash-alt icon-trash"></i><i class="fas fa-pencil-alt icon-edit"></i></td>
+            -->
+        </tr>
+        {% empty %}
+                <li>Sem itens na lista.</li>
+        {% endfor %}
+	</table>
+</div>
+{% endblock content %}
