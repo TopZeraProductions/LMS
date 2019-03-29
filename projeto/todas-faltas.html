@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Início</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src="assets/js/style.js"></script>
+
+</head>
+<body class="dashboard">
+	<header>
+		<nav>
+			<div class="ul_left">
+				<ul class="ul_nav">
+					<li><a href="#">Inicio</a></li>
+					<li class="active"><a href="turmas.html">Turmas</a></li>
+					<li><a href="recados.html">Recados</a></li>
+				<!-- 	<li><a href="#"></a></li>
+					<li><a href="#"></a></li> -->
+				</ul>
+			</div>			
+			<div class="ul_right">
+				<div class="right">
+					<h4>Ramon C. <i class="fas fa-angle-down icon-arrow"></i></h4>	
+					<div class="menu_user">
+						<ul>
+							<li><a href="#"><i class="fas fa-cog"></i>Opções</a></li>
+							<li><a href="#"><i class="fas fa-sign-out-alt"></i>Sair</a></li>
+						</ul>
+					</div>			
+				</div>
+			</div>
+		</nav>
+			<div class="clear"></div>			
+
+	</header>
+
+	<div class="content classroom todas-faltas">
+		<h1>Histórico de aulas</h1>
+		<ul class="action">
+			<li><a href="sala.html" class="voltar"><< Voltar</a></li>
+		</ul>
+		<hr>
+		<div class="row">
+			<table>
+				<thead>
+					<tr>
+						<td>ID</td>
+						<td>Assunto do dia</td>
+						<td>Data</td>
+					</tr>	
+				</thead>
+				<tbody>
+					<tr onclick="window.location.href= 'todas-faltas-sala.html'">
+						<td>1</td>
+						<td>Lógica de programação</td>
+						<td>22/09/2018</td>
+					</tr>
+					<tr onclick="window.location.href= 'todas-faltas-sala.html'">
+						<td>2</td>
+						<td>Programação orientada a objetos</td>
+						<td>18/09/2018</td>
+					</tr>
+					<tr onclick="window.location.href= 'todas-faltas-sala.html'">
+						<td>3</td>
+						<td>Conexão com banco de dados</td>
+						<td>14/09/2018</td>
+					</tr>
+					<tr onclick="window.location.href= 'todas-faltas-sala.html'">
+						<td>4</td>
+						<td>Arrays e Dicionários</td>
+						<td>10/09/2018</td>
+					</tr>
+				</tbody>
+			</table>
+
+		</div>	
+	</div>
+
+
+</body>
+</html>
